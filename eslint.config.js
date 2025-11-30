@@ -19,6 +19,7 @@ export default [
       semi: 'error',
       'no-unused-vars': 'warn',
       'no-console': 'warn',
+      'no-undef': 'off',
     },
   },
 ];
