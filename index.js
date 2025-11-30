@@ -21,7 +21,6 @@ if (process.env.NODE_ENV !== 'test') {
   });
 }
 
-export default app;
 app.get('/health', (req, res) => {
   res.status(200).json({ status: 'OK', message: 'Server is healthy' });
 });
