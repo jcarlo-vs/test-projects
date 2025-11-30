@@ -4,8 +4,12 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "nodemon index.js",
+    "test": "NODE_ENV=test node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:watch": "NODE_ENV=test node --experimental-vm-modules node_modules/jest/bin/jest.js --watch",
+    "test:coverage": "NODE_ENV=test node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
+    "build": "node ",
     "start": "node index.js",
+    "dev": "nodemon index.js",
     "lint": "eslint ."
   },
   "keywords": [],
@@ -17,11 +21,14 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
+    "@types/jest": "^29.5.14",
     "eslint": "^9.39.1",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
     "globals": "^16.5.0",
+    "jest": "^29.7.0",
     "nodemon": "^3.1.11",
-    "prettier": "^3.7.3"
+    "prettier": "^3.7.3",
+    "supertest": "^7.0.0"
   }
 }
