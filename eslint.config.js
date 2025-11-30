@@ -18,7 +18,7 @@ export default [
       'prettier/prettier': 'error',
       semi: 'error',
       'no-unused-vars': 'warn',
-      'no-console': 'warn',
+      'no-console': 'error',
     },
   },
 ];
